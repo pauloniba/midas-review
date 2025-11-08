@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Midas Review Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial; text-align: center; padding: 40px; }
+  </style>
+</head>
+<body>
+
+<script>
+
+if (localStorage.getItem("midas_review_submitted") === "yes") {
+   document.write("<h2>You’ve already submitted a review.</h2><p>Thank you for your feedback!</p>");
+} else {
+   
+   window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdIM4-3waJ_StLetwBg5D_723RVfE9NOCO0IUDKQ3dOnosQ2A/viewform?usp=header";
+}
+</script>
+
+</body>
+</html>
